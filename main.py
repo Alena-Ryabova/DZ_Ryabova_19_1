@@ -58,7 +58,7 @@ class MyServer(BaseHTTPRequestHandler):
             height: -webkit-fill-available;
             max-height: 100vh;
             overflow-x: auto;
-            overflow-y: hidden;
+            overflow-y: auto;
         }
 
         .b-example-divider {
@@ -367,6 +367,54 @@ class MyServer(BaseHTTPRequestHandler):
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Units in stock</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Order status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Gucci Bamboo Gucci, 50ml</td>
+                        <td>84$</td>
+                        <td>8</td>
+                        <td>672$</td>
+                        <td class="table-primary">New</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Carolina Herrera Good Girl, 30ml</td>
+                        <td>79$</td>
+                        <td>3</td>
+                        <td>237$</td>
+                        <td class="table-warning">Processing</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Dolce&Gabbana Light Blue, 25ml</td>
+                        <td>58$</td>
+                        <td>6</td>
+                        <td>348$</td>
+                        <td class="table-success">Processed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Lanvin, 30ml</td>
+                        <td>25$</td>
+                        <td>2</td>
+                        <td>50$</td>
+                        <td class="table-danger">Cancelled</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
